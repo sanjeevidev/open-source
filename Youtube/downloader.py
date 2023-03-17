@@ -41,7 +41,7 @@ class YoutubeDownloader():
                 elif 'https://' not in self.video_url.get():
                          messagebox.showerror("Error","Wrong Video Url")
                 elif self.video_path.get() == "":
-                        messagebox.showerror("Error","Please provide Path")
+                        messagebox.showerror("Please provide Path")
                 else:
                         # try:
                                 # Just fix resolution video and add variabel in video downloader 
@@ -128,7 +128,7 @@ class YoutubeDownloader():
                                 self.root.mainloop()
                         except:
                                 time.sleep(10)
-                                messagebox.showerror("Error","Unable to Download Video | Something went wrong !!")
+                                messagebox.showerror("Something went wrong !!")
         # ========================= End ==============================
         # ======================== Clear =======================
         def Clear(self):
